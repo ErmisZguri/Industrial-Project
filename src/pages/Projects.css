@@ -1,0 +1,232 @@
+/* Fade-in animation for project cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e86823;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar-left, .navbar-right, .navbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.search-section input,
+.search-section select {
+  padding: 12px 15px;
+  border: 1px solid #194775;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.search-section button {
+  padding: 12px 20px;
+  background-color: #e86823;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+  background-color: #ffa500;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures three projects per row */
+  gap: 20px;
+  padding: 0 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-info {
+  text-align: left;
+  margin-top: auto;
+}
+
+.project-info h3 {
+  font-size: 1.1em;
+  color: #194775;
+  margin: 10px 0;
+}
+
+.project-info p {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.project-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.project-info a {
+  color: #e86823;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Save to Favorites Button */
+.save-favorites {
+  background-color: #ffa500;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.save-favorites:hover {
+  background-color: #e86823;
+}
+
+/* Project Preview Section */
+.project-preview {
+  background-color: #194775;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 40px 30px;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  position: sticky;
+  bottom: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button for Project Preview */
+.close-preview {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e86823;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-preview:hover {
+  background-color: #ffa500;
+}
+
+.project-preview img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.preview-info {
+  max-width: 600px;
+}
+
+.preview-info h3 {
+  font-size: 1.8em;
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+
+.preview-info p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e86823;
+  padding: 20px 30px;
+  color: white;
+}
+
+.social-icons i {
+  margin-left: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #ffa500;
+}
